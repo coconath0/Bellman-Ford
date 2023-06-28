@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap);
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section .home{
+    min-height: 100vh;
+}
+
+
+.cont {
+    position: relative;
+}
+
+#proyectoNom {
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    user-select: none;
+}
+
+
+#particles {
+    z-index: 1;
+    height: 100%;
+    height: 100vh;
+    background: #151217;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+.particles-css{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.particles-css ::selection{
+    background-color: #bbd9d8;
+    color: #1e413f;
+}
+
+.particles-css2 ::selection{
+    background-color: #1e413f;
+    color: #fff;
+}
+
+.particles-css h1{
+    font-size: 100px;
+    color: #734f8c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.particles-css .particles-css2 h2{
+    font-size: 20px;
+    color: #9c7bb4;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    background: #151217;
+    
+}
