@@ -2,52 +2,13 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap);
 
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-section .home{
-    min-height: 100vh;
-}
-
-
-.cont {
-    position: relative;
-}
-
-#proyectoNom {
-    font-family: 'Josefin Sans', sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
-    text-align: center;
-    color: #ffffff;
-    user-select: none;
-}
-
-
-#particles {
-    z-index: 1;
-    height: 100%;
-    height: 100vh;
-    background: #151217;
-} */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -85,7 +46,9 @@ section {
     /*Secondary color por h1: in hover*/
 }
 
-/* .particles-css ::selection{
+/* If we want the words to be selected then: 
+
+.particles-css ::selection{
     background-color: #c5abd8;
     color: #53326b;
 }
@@ -127,9 +90,140 @@ span:hover {
 #particles-js {
     width: 100%;
     height: 100vh;
-    background: #151217;
+    background: #fff;
 
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #734f8c;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #51296e;
+}
+
+/* navigation bar */
+.nav {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: #231b29;
+    /* color fondo navBar */
+    z-index: 10;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    user-select: none;
+}
+
+.nav-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.nav-top {
+    position: fixed;
+    top: 0;
+}
+
+.nav-tab {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #fff;
+    /* color letra */
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 15px;
+}
+
+.nav-tab:hover {
+    color: #fff;
+    background: #5d3778;
+    transition: all 0.5s ease;
+}
+
+.nav #marker {
+    position: absolute;
+    height: 4px;
+    bottom: -2px;
+    background-color: #804ba6;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+/* New CSS for the marker animation */
+.nav-bottom #marker {
+    left: 0;
+    width: 0;
+}
+
+.nav-top #marker {
+    left: 0;
+    width: 100%;
+}
+
+/* main */
+.slider{
+    box-shadow: 0 50px 80px rgba(73, 29, 94, 0.9); /*Sombra x section*/
+}
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: #151217;
+    /*Fondo*/
+    text-align: center;
+    padding: 0 2em;
+    
+}
+.slider h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 0.5rem;
+    color: #734f8c;
+    /*Primary color por h1*/
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+
+.slider h1:hover {
+    transform: translate3d(0, -10px, 22px);
+    color: #231b29;
+    /*Secondary color por h1: in hover*/
+}
+
+h1::selection {
+    text-shadow: 4px 4px 0 #dec2f1;
+}
+
+.slider h2 {
+    font-size: 2vw;
+    letter-spacing: 0.1rem;
+    font-family: "ROBOTO", sans-serif;
+    font-weight: 300;
+    color: #faebd7;
+    z-index: 4;
+}
+
+.slider h2::selection {
+    background-color: #dec2f1;
+    color: #51296e;
+}
+
 
 /* Footer */
 footer {
