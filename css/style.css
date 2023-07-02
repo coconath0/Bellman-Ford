@@ -263,10 +263,35 @@ h1::selection {
     padding: 40px;
 }
 
-img{
-    transform: scale(0.8);
-    border-radius: 25px;
+section .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.about-img img {
+    margin-top: 14%;
+    width: 350px;
+    border-radius: .5rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.about-ford, .about-bellman {
+    width: 800px;
+    margin-top: -2px;
+    margin-right: 10rem;
+}
+
+.about-ford p, .about-bellman p{
+    margin: 15rem 0 10rem;
+    font-size: 15px;
+    text-align: justify;
+    color: #faebd7;
+    line-height: 2;
+    top: 50%;
 }
 
 /* Footer */
