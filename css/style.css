@@ -154,7 +154,7 @@ span:hover {
 
 .nav #marker {
     position: absolute;
-    height: 4px;
+    height: 2px;
     bottom: -2px;
     background-color: #804ba6;
     transition: 0.5s;
@@ -179,7 +179,7 @@ span:hover {
 .slider {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */ 
     align-items: center;
     height: 100vh;
     position: relative;
@@ -191,7 +191,8 @@ span:hover {
 }
 .slider h1 {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 50px;
+    font-size: 30px;
+    padding-top: 90px;
     margin: 0;
     letter-spacing: 0.5rem;
     color: #734f8c;
@@ -211,7 +212,7 @@ h1::selection {
 }
 
 .slider h2 {
-    font-size: 2vw;
+    font-size: 15px;
     letter-spacing: 0.1rem;
     font-family: "ROBOTO", sans-serif;
     font-weight: 300;
