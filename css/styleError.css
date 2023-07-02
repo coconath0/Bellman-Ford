@@ -497,11 +497,11 @@ nav .menu .menu_icon:hover .icon:after {
     animation-name: pieceLeft;
 }
 
-/* .wrapper .container .two .content .piece {
+.wrapper .container .two .content .piece {
     background: linear-gradient(90deg, #FFEDC0 0%, #FF9D87 100%);
-} */
+}
 
-.wrapper .container .one .content .piece:nth-child(4) {
+.wrapper .container .two .content .piece:nth-child(1) {
     left: 0%;
     top: 25%;
     height: 40px;
@@ -510,7 +510,7 @@ nav .menu .menu_icon:hover .icon:after {
     animation-name: pieceLeft;
 }
 
-.wrapper .container .one .content .piece:nth-child(5) {
+.wrapper .container .two .content .piece:nth-child(2) {
     right: 15%;
     top: 35%;
     width: 180px;
@@ -519,7 +519,7 @@ nav .menu .menu_icon:hover .icon:after {
     animation-name: pieceRight;
 }
 
-.wrapper .container .one .content .piece:nth-child(6) {
+.wrapper .container .two .content .piece:nth-child(3) {
     right: 10%;
     top: 80%;
     height: 20px;
@@ -528,11 +528,11 @@ nav .menu .menu_icon:hover .icon:after {
     animation-name: pieceRight;
 }
 
-/* .wrapper .container .three .content .piece {
+.wrapper .container .three .content .piece {
     background: #FB8A8A;
-} */
+}
 
-.wrapper .container .one .content .piece:nth-child(7) {
+.wrapper .container .three .content .piece:nth-child(1) {
     left: 25%;
     top: 35%;
     height: 20px;
@@ -541,7 +541,7 @@ nav .menu .menu_icon:hover .icon:after {
     animation-delay: 3.5s;
 }
 
-.wrapper .container .one .content .piece:nth-child(8) {
+.wrapper .container .three .content .piece:nth-child(2) {
     right: 10%;
     top: 55%;
     width: 140px;
@@ -550,7 +550,7 @@ nav .menu .menu_icon:hover .icon:after {
     animation-delay: 4s;
 }
 
-.wrapper .container .one .content .piece:nth-child(9) {
+.wrapper .container .three .content .piece:nth-child(3) {
     left: 40%;
     top: 68%;
     height: 20px;
