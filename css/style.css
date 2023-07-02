@@ -263,12 +263,11 @@ h1::selection {
     padding: 40px;
 }
 
-.container img{
+img{
     transform: scale(0.8);
-    border-radius: 20px;
-    
-}
+    border-radius: 25px;
 
+}
 
 /* Footer */
 footer {
@@ -283,7 +282,6 @@ footer {
 footer p {
     text-decoration: none;
 }
-
 
 .styleFoot {
     width: 100%;
