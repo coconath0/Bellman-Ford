@@ -28,8 +28,8 @@ section {
 
 }
 
-.particles-css h1 {
-    font-size: 60px;
+.particles-css .typing-demo h1 {
+    font-size: 80px;
     color: #734f8c;
     position: absolute;
     top: 50%;
@@ -39,12 +39,12 @@ section {
     transition: all 0.5s ease;
 }
 
-.particles-css h1:hover {
+/* .particles-css h1:hover {
 
     transform: translate3d(-225px, -60px, 100px);
     color: #c79ce6;
-    /*Secondary color por h1: in hover*/
-}
+} */
+
 
 /* If we want the words to be selected then: 
 
@@ -57,6 +57,28 @@ section {
     background-color: #53326b;
     color: #fff;
 } */
+
+.typing-demo h1 {
+    width: 12.5ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
 
 .particles-css .particles-css2 h3 {
     font-size: 20px;
@@ -90,7 +112,7 @@ span:hover {
 #particles-js {
     width: 100%;
     height: 100vh;
-    background: #231b29;
+    background: #231b29; /* #231b29 #e6ddd6*/
 
 }
 
@@ -174,12 +196,13 @@ span:hover {
 
 /* main */
 .slider{
-    box-shadow: 0 50px 80px rgba(73, 29, 94, 0.9); /*Sombra x section*/
+    box-shadow: 0 20px 50px rgba(73, 29, 94, 0.5); /*Sombra x section*/
 }
+
 .slider {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */ 
+    justify-content: center; 
     align-items: center;
     height: 100vh;
     position: relative;
@@ -189,10 +212,19 @@ span:hover {
     padding: 0 2em;
     
 }
+
+.container {
+    height: 70%;
+    width: 95%;
+    display: flex;
+    background-color: #151217;
+    border-radius: 40px;
+    box-shadow: 0 0 30px rgba(89, 61, 102, 0.2);
+}
+
 .slider h1 {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 30px;
-    padding-top: 90px;
+    font-size: 40px;
     margin: 0;
     letter-spacing: 0.5rem;
     color: #734f8c;
@@ -218,11 +250,23 @@ h1::selection {
     font-weight: 300;
     color: #faebd7;
     z-index: 4;
+    /* padding-bottom: 110px; */
 }
 
 .slider h2::selection {
     background-color: #dec2f1;
     color: #51296e;
+}
+
+.subSlider {
+    /* background-color: #dec2f1; */
+    padding: 40px;
+}
+
+.container img{
+    transform: scale(0.8);
+    border-radius: 20px;
+    
 }
 
 
