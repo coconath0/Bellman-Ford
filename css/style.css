@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -109,7 +110,8 @@ span:hover {
 #particles-js {
     width: 100%;
     height: 100vh;
-    background: #231b29; /* #231b29 #e6ddd6*/
+    background: #231b29;
+    /* #231b29 #e6ddd6*/
 
 }
 
@@ -134,7 +136,7 @@ span:hover {
     bottom: 0;
     width: 100%;
     height: 60px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5); */
     background: #231b29;
     /* color fondo navBar */
     z-index: 10;
@@ -192,14 +194,15 @@ span:hover {
 }
 
 /* main */
-.slider{
-    box-shadow: 0 20px 50px rgba(73, 29, 94, 0.5); /*Sombra x section*/
+.slider {
+    box-shadow: 0 20px 50px rgba(73, 29, 94, 0.5);
+    /*Sombra x section*/
 }
 
 .slider {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     height: 100vh;
     position: relative;
@@ -207,7 +210,7 @@ span:hover {
     /*Fondo*/
     text-align: center;
     padding: 0 2em;
-    
+
 }
 
 .container {
@@ -276,19 +279,25 @@ section .about {
     align-self: center;
 }
 
-.about-ford, .about-bellman {
+.about-ford,
+.about-bellman {
     width: 800px;
     margin-top: -2px;
     margin-right: 10rem;
 }
 
-.about-ford p, .about-bellman p{
+.about-ford p,
+.about-bellman p {
     margin: 15rem 0 10rem;
     font-size: 15px;
     text-align: justify;
     color: #faebd7;
     line-height: 2;
     top: 50%;
+}
+
+#tab-Implementation {
+    height: 100px;
 }
 
 /* Footer */
@@ -470,4 +479,405 @@ footer p {
 .loader span:nth-child(24) {
     -webkit-animation-delay: 2.3s;
     animation-delay: 2.3s;
+}
+
+/* CSS para dispositivos pequeños */
+@media screen and (max-width: 375px) {
+
+    .particles-css .typing-demo h1 {
+        font-size: 30px;
+    }
+
+    .particles-css .particles-css2 h3 {
+        font-size: 13px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+        /* Modifica los valores según tus preferencias */
+        background: #231b29;
+        /* color fondo navBar */
+        z-index: 10;
+        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        user-select: none;
+    }
+
+    .nav-top {
+        position: fixed;
+        top: 0;
+    }
+
+
+    .nav-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .nav-tab {
+        text-decoration: none;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        color: #fff;
+        /* color letra */
+        letter-spacing: 0rem;
+        transition: all 0.5s ease;
+        font-size: 9.5px;
+    }
+
+    .slider h1 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 30px;
+        margin: 0;
+        letter-spacing: 0.2rem;
+        color: #734f8c;
+        /*Primary color por h1*/
+        transition: all 0.3s ease;
+        z-index: 3;
+    }
+
+    .about-img img {
+        width: 150px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* about R.B& LF */
+    .about-ford,
+    .about-bellman {
+        width: 265px;
+        margin-left: 30px;
+    }
+
+    .about-ford p,
+    .about-bellman p {
+        margin-top: 2rem;
+        font-size: 11px;
+        text-align: justify;
+        color: #faebd7;
+        line-height: 2;
+
+    }
+}
+
+
+/* CSS para dispositivos medianos */
+@media screen and (max-width: 568px) {
+    section {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .particles-css .typing-demo h1 {
+        font-size: 60px;
+    }
+
+    .particles-css .particles-css2 h3 {
+        font-size: 16px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background: #231b29;
+        /* color fondo navBar */
+        z-index: 10;
+        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        user-select: none;
+    }
+
+    .nav-top {
+        position: fixed;
+        top: 0;
+    }
+
+
+    .nav-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .nav-tab {
+        text-decoration: none;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        color: #fff;
+        /* color letra */
+        transition: all 0.5s ease;
+        font-size: 10px;
+    }
+
+    .slider h1 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 35px;
+        margin: 0;
+        letter-spacing: 0.2rem;
+        color: #734f8c;
+        /*Primary color por h1*/
+        transition: all 0.3s ease;
+        z-index: 3;
+    }
+
+    .about-img img {
+        width: 200px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    /* about R.B& LF */
+    .about-ford,
+    .about-bellman {
+        width: 410px;
+        margin-left: 35px;
+    }
+
+    .about-ford p,
+    .about-bellman p {
+        margin-top: 2rem;
+        font-size: 12.5px;
+        text-align: justify;
+        color: #faebd7;
+        line-height: 2;
+
+    }
+
+    /* Footer */
+    footer {
+        background-color: #231b29;
+        color: #fff;
+        padding: 25px;
+        text-align: center;
+        user-select: none;
+        position: relative;
+    }
+
+    footer p {
+        text-decoration: none;
+    }
+
+    .styleFoot {
+        width: 100%;
+        font-size: 10px;
+        vertical-align: bottom;
+        margin: 2rem 0 2rem;
+        text-align: center;
+        color: #fff;
+    }
+
+    .styleFoot2 {
+        font-size: 12px;
+        width: 100%;
+        vertical-align: bottom;
+        margin: 2rem 0 2rem;
+        text-align: center;
+        color: #fff;
+    }
+
+
+}
+
+/* CSS para dispositivos grandes */
+@media screen and (max-width: 768px) {
+    section {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .particles-css .typing-demo h1 {
+        font-size: 75px;
+    }
+
+    .particles-css .particles-css2 h3 {
+        font-size: 20px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 55px;
+        background: #231b29;
+        /* color fondo navBar */
+        z-index: 10;
+        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        user-select: none;
+    }
+
+    .nav-top {
+        position: fixed;
+        top: 0;
+    }
+
+
+    .nav-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .nav-tab {
+        text-decoration: none;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        color: #fff;
+        /* color letra */
+        transition: all 0.5s ease;
+        font-size: 15px;
+    }
+
+    .slider h1 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 45px;
+        margin: 0;
+        letter-spacing: 0.2rem;
+        color: #734f8c;
+        /*Primary color por h1*/
+        transition: all 0.3s ease;
+        z-index: 3;
+    }
+
+    .about-img img {
+        width: 250px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    /* about R.B& LF */
+    .about-ford,
+    .about-bellman {
+        width: 600px;
+        margin-left: 35px;
+    }
+
+    .about-ford p,
+    .about-bellman p {
+        margin-top: 2rem;
+        font-size: 15px;
+        text-align: justify;
+        color: #faebd7;
+        line-height: 2;
+
+    }
+
+}
+
+/* CSS para dispositivos extra grandes */
+@media screen and (max-width: 1024px) {
+    .particles-css .typing-demo h1 {
+        font-size: 80px;
+    }
+    
+    .particles-css .particles-css2 h3 {
+        font-size: 25px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background: #231b29;
+        z-index: 10;
+        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        user-select: none;
+    }
+
+    .nav-top {
+        position: fixed;
+        top: 0;
+    }
+
+    .nav-bottom {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .nav-tab {
+        text-decoration: none;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        color: #fff;
+
+        transition: all 0.5s ease;
+        font-size: 15px;
+    }
+
+    .slider h1 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 45px;
+        margin: 0;
+        letter-spacing: 0.2rem;
+        color: #734f8c;
+        transition: all 0.3s ease;
+        z-index: 3;
+    }
+
+    .about-img img {
+        margin-top: 5%;
+        width: 250px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .container {
+        display: flex;
+    }
+
+
+    .about-ford,
+    .about-bellman {
+        width: 850px;
+        margin-left: 30px;
+    }
+
+    .about-ford p,
+    .about-bellman p {
+        margin-top: 2rem;
+        font-size: 16px;
+        text-align: justify;
+        color: #faebd7;
+        line-height: 2;
+
+    }
 }
