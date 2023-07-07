@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap);
+
 @import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap);
 
 * {
@@ -6,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
@@ -25,6 +25,7 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
 }
 
 .particles-css .typing-demo h1 {
@@ -41,6 +42,18 @@ section {
 .particles-css h1:hover {
     color: #c79ce6;
 }
+
+/* If we want the words to be selected then: 
+
+.particles-css ::selection{
+    background-color: #c5abd8;
+    color: #53326b;
+}
+
+.particles-css2 ::selection{
+    background-color: #53326b;
+    color: #fff;
+} */
 
 .typing-demo h1 {
     width: 12.5ch;
@@ -96,7 +109,8 @@ span:hover {
 #particles-js {
     width: 100%;
     height: 100vh;
-    background: #231b29;
+    background: #231b29; /* #231b29 #e6ddd6*/
+
 }
 
 /* Scrollbar */
@@ -116,12 +130,13 @@ span:hover {
 .nav {
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 60px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     background: #231b29;
+    /* color fondo navBar */
     z-index: 10;
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
     user-select: none;
@@ -144,6 +159,7 @@ span:hover {
     align-items: center;
     flex: 1;
     color: #fff;
+    /* color letra */
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
     font-size: 15px;
@@ -176,20 +192,22 @@ span:hover {
 }
 
 /* main */
-.slider {
-    box-shadow: 0 20px 50px rgba(73, 29, 94, 0.5);
+.slider{
+    box-shadow: 0 20px 50px rgba(73, 29, 94, 0.5); /*Sombra x section*/
 }
 
 .slider {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     height: 100vh;
     position: relative;
     background-color: #151217;
+    /*Fondo*/
     text-align: center;
     padding: 0 2em;
+    
 }
 
 .container {
@@ -207,6 +225,7 @@ span:hover {
     margin: 0;
     letter-spacing: 0.5rem;
     color: #734f8c;
+    /*Primary color por h1*/
     transition: all 0.3s ease;
     z-index: 3;
 }
@@ -214,6 +233,7 @@ span:hover {
 .slider h1:hover {
     transform: translate3d(0, -10px, 22px);
     color: #231b29;
+    /*Secondary color por h1: in hover*/
 }
 
 h1::selection {
@@ -227,6 +247,7 @@ h1::selection {
     font-weight: 300;
     color: #faebd7;
     z-index: 4;
+    /* padding-bottom: 110px; */
 }
 
 .slider h2::selection {
@@ -235,6 +256,7 @@ h1::selection {
 }
 
 .subSlider {
+    /* background-color: #dec2f1; */
     padding: 40px;
 }
 
@@ -242,7 +264,6 @@ section .about {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .about-img img {
@@ -255,20 +276,19 @@ section .about {
     align-self: center;
 }
 
-.about-ford,
-.about-bellman {
-    width: 100%;
+.about-ford, .about-bellman {
+    width: 800px;
     margin-top: -2px;
     margin-right: 10rem;
 }
 
-.about-ford p,
-.about-bellman p {
-    margin: 15px 0 10px;
+.about-ford p, .about-bellman p{
+    margin: 15rem 0 10rem;
     font-size: 15px;
     text-align: justify;
     color: #faebd7;
     line-height: 2;
+    top: 50%;
 }
 
 /* Footer */
@@ -330,7 +350,9 @@ footer p {
 @-webkit-keyframes loading {
     to {
         text-shadow: 20px 0 70px #865ba3;
+        /* sombra */
         color: #51296e;
+        /* color de letra */
     }
 }
 
@@ -367,6 +389,7 @@ footer p {
 .loader span:nth-child(8) {
     -webkit-animation-delay: 0.7s;
     animation-delay: 0.7s;
+
 }
 
 .loader span:nth-child(9) {
@@ -447,29 +470,4 @@ footer p {
 .loader span:nth-child(24) {
     -webkit-animation-delay: 2.3s;
     animation-delay: 2.3s;
-}
-
-@media screen and (max-width: 768px) {
-    .slider h1 {
-        font-size: 30px;
-    }
-    .slider h2 {
-        font-size: 13px;
-    }
-    .about-img img {
-        width: 250px;
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-    .about-ford,
-    .about-bellman {
-        width: 100%;
-        margin-top: -2px;
-        margin-right: 2rem;
-    }
-    .about-ford p,
-    .about-bellman p {
-        margin: 15px 0 10px;
-        font-size: 13px;
-    }
 }
