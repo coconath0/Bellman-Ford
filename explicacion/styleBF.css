@@ -11,6 +11,7 @@ h1 {
     text-align: center;
     font-size: 50px;
     color: #734f8c;
+    transition: all 0.5s ease;
 }
 
 h1:hover {
@@ -26,6 +27,7 @@ h1::selection{
 h2 {
     margin-top: 1rem;
     color: #53326b;
+    transition: all 0.5s ease;
 }
 
 h2:hover {
