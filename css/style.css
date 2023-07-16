@@ -300,6 +300,35 @@ section .about {
     height: 100px;
 }
 
+/* About project */
+.info{
+    color: #faebd7;
+    line-height: 200px;
+    width: 800px;
+    height: 200px;
+    /* border: 3px solid green; */
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    margin: auto auto;
+    padding: 10px;
+    position: relative;
+}
+
+.info p {
+    line-height: 2;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+p::selection {
+    background-color: #5d3778;
+    color: #dec2f1;
+}
+
 /* Footer */
 footer {
     background-color: #231b29;
@@ -798,11 +827,11 @@ footer p {
 }
 
 /* CSS para dispositivos extra grandes */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .particles-css .typing-demo h1 {
         font-size: 80px;
     }
-    
+
     .particles-css .particles-css2 h3 {
         font-size: 25px;
     }
@@ -853,31 +882,42 @@ footer p {
         z-index: 3;
     }
 
-    .about-img img {
-        margin-top: 5%;
-        width: 250px;
-        margin-left: 5rem;
-        margin-right: 5rem;
+
+    .subSlider {
+        /* background-color: #dec2f1; */
+        padding: 40px;
     }
 
-    .container {
+    section .about {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
+    .about-img img {
+        margin-top: 14%;
+        width: 350px;
+        border-radius: .5rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
+        justify-self: center;
+        align-self: center;
+    }
 
     .about-ford,
     .about-bellman {
-        width: 850px;
-        margin-left: 30px;
+        width: 800px;
+        margin-top: -2px;
+        margin-right: 10rem;
     }
 
     .about-ford p,
     .about-bellman p {
-        margin-top: 2rem;
-        font-size: 16px;
+        margin: 15rem 0 10rem;
+        font-size: 15px;
         text-align: justify;
         color: #faebd7;
         line-height: 2;
-
+        top: 50%;
     }
 }
