@@ -220,6 +220,8 @@ span:hover {
     background-color: #151217;
     border-radius: 40px;
     box-shadow: 0 0 30px rgba(89, 61, 102, 0.2);
+    justify-content: center;
+    align-items: center;
 }
 
 .slider h1 {
@@ -263,27 +265,50 @@ h1::selection {
     padding: 40px;
 }
 
+.about-algorithm {
+    color: #faebd7;
+    width: 810px;
+    line-height: 2;
+    text-align: justify;
+}
+.about-algorithm ul {
+    margin-left: 50px;
+}
+
 section .about {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about-img img {
-    margin-top: 14%;
+/* .about-img img {
     width: 350px;
     border-radius: .5rem;
     margin-left: 15rem;
     margin-right: 15rem;
     justify-self: center;
     align-self: center;
+} */
+
+.about-img img {
+    max-width: 400px;
+    float: left;
+    border-radius: .5rem;
+}
+
+.about-img2 img {
+    max-width: 1000px;
+    float: left;
+    border-radius: .5rem;
 }
 
 .about-ford,
 .about-bellman {
     width: 800px;
-    margin-top: -2px;
-    margin-right: 10rem;
+    /* margin-top: -2px;
+    margin-right: 10rem; */
+    padding-left: 40px;
+    float: left;
 }
 
 .about-ford p,
@@ -293,7 +318,6 @@ section .about {
     text-align: justify;
     color: #faebd7;
     line-height: 2;
-    top: 50%;
 }
 
 #tab-Implementation {
@@ -307,14 +331,10 @@ section .about {
     width: 800px;
     height: 200px;
     /* border: 3px solid green; */
-    text-align: center;
-    justify-content: center;
     display: flex;
-    align-items: center;
 
     margin: auto auto;
     padding: 10px;
-    position: relative;
 }
 
 .info p {
@@ -824,100 +844,4 @@ footer p {
 
     }
 
-}
-
-/* CSS para dispositivos extra grandes */
-@media screen and (min-width: 1024px) {
-    .particles-css .typing-demo h1 {
-        font-size: 80px;
-    }
-
-    .particles-css .particles-css2 h3 {
-        font-size: 25px;
-    }
-
-    .nav {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 60px;
-        background: #231b29;
-        z-index: 10;
-        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-        user-select: none;
-    }
-
-    .nav-top {
-        position: fixed;
-        top: 0;
-    }
-
-    .nav-bottom {
-        position: absolute;
-        bottom: 0;
-    }
-
-    .nav-tab {
-        text-decoration: none;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        color: #fff;
-
-        transition: all 0.5s ease;
-        font-size: 15px;
-    }
-
-    .slider h1 {
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 45px;
-        margin: 0;
-        letter-spacing: 0.2rem;
-        color: #734f8c;
-        transition: all 0.3s ease;
-        z-index: 3;
-    }
-
-
-    .subSlider {
-        /* background-color: #dec2f1; */
-        padding: 40px;
-    }
-
-    section .about {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about-img img {
-        margin-top: 14%;
-        width: 350px;
-        border-radius: .5rem;
-        margin-left: 15rem;
-        margin-right: 15rem;
-        justify-self: center;
-        align-self: center;
-    }
-
-    .about-ford,
-    .about-bellman {
-        width: 800px;
-        margin-top: -2px;
-        margin-right: 10rem;
-    }
-
-    .about-ford p,
-    .about-bellman p {
-        margin: 15rem 0 10rem;
-        font-size: 15px;
-        text-align: justify;
-        color: #faebd7;
-        line-height: 2;
-        top: 50%;
-    }
 }

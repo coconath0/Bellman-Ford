@@ -56,9 +56,32 @@
         <section class="slider" id="tab-Algorithm">
             <div class="subSlider">
                 <h1>ALGORITHM</h1>
-                <h2>--- Shortest path algorithm -> Bellman-Ford ---</h2>
             </div>
-            <div class="container"></div>
+            <div class="container">
+                <div class="about-algorithm">
+                    <p>The Bellman-Ford optimization algorithm is used to find the shortest paths between all nodes in a directed or
+                        undirected weighted graph from a source node. This algorithm can handle edges with negative weights, which makes
+                        it useful in some situations. Furthermore, it finds the shortest distances using an edge relaxation strategy
+                        repeatedly. It starts by assigning all nodes an infinite distance, except the source node, which has a distance
+                        of 0. Then, iterates through the next two V1 steps, where V is the total number of nodes in the graph
+                    </p><br>
+                    <ul>
+                        <li>Edge relaxation phase: For each edge (u, v) in the graph, try to increase the distance to node v from
+                            node u by adding the weight of the edge to the current distance of u and comparing the result with the
+                            current distance of v. The distance of v is updated if it is shorter.</li><br>
+                
+                        <li>Negative Cycle Detection Phase: After the V-1 edge relaxation phases, an additional phase is performed
+                            to determine if there is a negative cycle in the graph. If an improvement is found in any of the
+                            distances, a negative cycle can be reached from the source.</li>
+                    </ul><br>
+                    <p>
+                        The algorithm will calculate the shortest distance between the source and all other nodes when the V-1 edge
+                        relaxation phases have finished. If there are no negative cycles, these distances are the shortest possible. A
+                        negative cycle indicates that there is no optimal solution, since the distance can continue to increase without
+                        end.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section class="slider" id="tab-Bellman">
@@ -92,7 +115,7 @@
             </div>
 
             <div class="container">
-                <div class="about-img">
+                <div class="about-img2">
                     <img src="./img/lester_ford.jpeg" alt="SeñorFord">
                 </div>
 
