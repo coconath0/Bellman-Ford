@@ -1,0 +1,52 @@
+.center {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes glow {
+    0% {
+        box-shadow: 0 0 0 0 #734f8c;
+    }
+
+    50% {
+        box-shadow: 0 0 10px 0 #734f8c;
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 0 0 #734f8c;
+    }
+
+    50% {
+        box-shadow: 0 0 10px 0 #734f8c;
+    }
+}
+
+.btn {
+    background: none;
+    color: inherit;
+    font: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.btn-glow {
+    background: #51296e;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    box-shadow: 0 0 0 0 #51296e;
+    -webkit-animation: glow 2s linear infinite;
+    animation: glow 5s linear infinite;
+}

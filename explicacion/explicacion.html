@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bellman-Ford</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleBF.css">
+    <link rel="stylesheet" href="btn.css">
 </head>
 
 <body>
-    <h1>BELLMAN FORD ALGORITHM</h1>
+    <h1>Bellman Ford Algorithm for Dummies</h1>
     <!-- div both parts  -->
     <div class="full">
         
@@ -19,99 +20,99 @@
             <div class="container">
 
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph1.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph1.png" alt=""> </div>
                     <p class="graphs-info">This is the graph for which we are going to visualise the process of the
                         Bellman-Ford algorithm step wise.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph2.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph2.png" alt=""> </div>
                     <p class="graphs-info"> <strong>BEGIN</strong> <br> Selecting the starting node of graph and
                         denoting it by "s".</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph3.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph3.png" alt=""> </div>
                     <p class="graphs-info">Cost for all nodes set as infinite, until they are visited and have been
                         assigned value.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph4.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph4.png" alt=""> </div>
                     <p class="graphs-info">The edge being visited is denoted by a red arrow.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph5.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph5.png" alt=""> </div>
                     <p class="graphs-info">After evaluating, if the cost is minimum till that point of consideration,
                         the edge is denoted in green. <br> The cost for traversing this edge is 20, hence 20 is assigned
                         to the corresponding node. <br> The next node is being visited.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph6.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph6.png" alt=""> </div>
                     <p class="graphs-info">Similarly, the shortest path for each node is being calculated.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph7.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph7.png" alt=""> </div>
                     <p class="graphs-info">Similarly, the shortest path for each node is being calculated.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph8.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph8.png" alt=""> </div>
                     <p class="graphs-info">Similarly, the shortest path for each node is being calculated.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph9.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph9.png" alt=""> </div>
                     <p class="graphs-info">Similarly, the shortest path for each node is being calculated.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph10.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph10.png" alt=""> </div>
                     <p class="graphs-info">Similarly, we will calculate the shortest paths for visiting all nodes from
                         s. <br> Now with the red path we are evaluating whether any improvement is possible in the cost.
                     </p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph11.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph11.png" alt=""> </div>
                     <p class="graphs-info">Since there was improvement in cost for the node, the value at the node has
                         been replaced by the minimum of both the costs.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph12.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph12.png" alt=""> </div>
                     <p class="graphs-info">Now with the red path we are evaluating whether any improvement is possible
                         in the cost.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph13.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph13.png" alt=""> </div>
                     <p class="graphs-info">Now with the red path we are evaluating whether any improvement is possible
                         in the cost.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph14.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph14.png" alt=""> </div>
                     <p class="graphs-info">Up to now, all shortest paths have been calculated that use at most 2 Edges .
                         Now we will calculate using at most 3 edges.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph15.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph15.png" alt=""> </div>
                     <p class="graphs-info">Now with the red path we are evaluating whether any improvement is possible
                         in the cost.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph16.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph16.png" alt=""> </div>
                     <p class="graphs-info">Now with the red path we are evaluating whether any improvement is possible
                         in the cost.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph17.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph17.png" alt=""> </div>
                     <p class="graphs-info">Since there was improvement in cost for the node, the value at the node has
                         been replaced by the minimum of both the costs.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph18.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph18.png" alt=""> </div>
                     <p class="graphs-info">Now with the red path we are evaluating whether any improvement is possible
                         in the cost.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph19.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph19.png" alt=""> </div>
                     <p class="graphs-info">Similarly, with the red path we will continue to evaluate the rest of the
-                        graph for anu possible improvement in cost.</p>
+                        graph for any possible improvement in cost.</p>
                 </article>
                 <article class="graphs">
-                    <div class="graphs-image"> <img src="./img/graph20.png" alt=""> </div>
+                    <div class="graphs-image"> <img src="./s/graph20.png" alt=""> </div>
                     <p class="graphs-info">The green edges denote the shortest/least cost paths for traversing the
                         nodes. <br> <strong>END</strong> </p>
                 </article>
@@ -121,20 +122,23 @@
                 <button class="next"> <strong>next</strong> </button>
                 <h2>Pseudocode</h2>
                 <p> <strong>BEGIN</strong> <br>
-                    d(v[1]) ← 0 <br>
+                    d ( v [1]) ← 0 <br>
                     FOR j = 2,..,n DO <br>
-                    &nbsp &nbsp d(v[j]) ← ∞ <br>
-                    FOR i = 1,..,(|V|-1) DO <br>
+                    &nbsp &nbsp d ( v [ j ]) ← ∞ <br>
+                    FOR i = 1,..,( |V| - 1 ) DO <br>
                     &nbsp &nbsp FOR ALL (u,v) in E DO <br>
-                    &nbsp &nbsp &nbsp &nbsp d(v) ← min(d(v), d(u)+l(u,v)) <br>
+                    &nbsp &nbsp &nbsp &nbsp d (v) ← min(d (v), d (u)+ l (u,v)) <br>
                     FOR ALL (u,v) in E DO <br>
-                    &nbsp &nbsp IF d(v) > d(u) + l(u,v) DO <br>
+                    &nbsp &nbsp IF d (v) > d (u) + l (u,v) DO <br>
                     &nbsp &nbsp Message: "Negative Circle" <br>
                     <strong>END</strong> <br>
                 </p>
             </div>
 
         </div>
+    </div>
+    <div class="center">
+        <a href="../index.html" target="_blank"><button class='btn btn-glow'>Let's go back!</button></a>
     </div>
 </body>
 <script src="functions.js"></script>
