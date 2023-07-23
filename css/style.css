@@ -379,7 +379,10 @@ footer p {
     color: #c79ce6;
 }
 
-@media (min-width: 800px) {
+
+
+
+@media (min-width: 1024px) {
 
     .nav h1,
     .slider h1 {
@@ -414,9 +417,44 @@ footer p {
     }
 }
 
-@media screen and (min-width: 500px) and (max-width: 799px) {
+@media screen and (min-width: 770px) and (max-width: 1023px) {
+    
+    .nav h1,
+    .slider h1 {
+        font-size: 50px;
+    }
+    
+
+    .nav h2,
+    .slider h2 {
+        font-size: 3vw;
+    }
+
+    .nav-tab {
+        font-size: 15px;
+    }
+    .about-algorithm {
+        width: 750px;
+    }
+
+    .about-img img,
+    .about-img2 img {
+        margin-left: 40px;
+    }
+
+    .about-ford p,
+    .about-bellman p {
+        line-height: 2;
+    }
+
+    .info p{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 769px) {
     .particles-css .typing-demo h1 {
-        font-size: 70px;
+        font-size: 65px;
     }
 
     .nav h1,
@@ -433,16 +471,15 @@ footer p {
     }
 
     .container p {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .about-algorithm {
         color: #faebd7;
-        width: 450px;
-        line-height: 2;
+        width: 480px;
         text-align: justify;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .about-img, .about-img2 {
@@ -460,9 +497,9 @@ footer p {
 
     .about-ford,
     .about-bellman {
-    width: 450px;
-    padding-left: 40px;
-    padding-right: 40px;
+        width: 450px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .about-ford p, .about-bellman p {

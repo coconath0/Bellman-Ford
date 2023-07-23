@@ -1,7 +1,7 @@
 # Bellman-Ford
 A website explaining the Bellman-Ford Algorithm, step by step.
 
-It isn't responsive yet. We're still working on that.
+We adjusted the principal website and made it responsive! We're still working on making the explanation responsive! ૮ ˶ᵔ ᵕ ᵔ˶ ა 
 
 ✩₊˚.⋆☾⋆⁺₊✧  -Soon-  ✩₊˚.⋆☾⋆⁺₊✧
 
