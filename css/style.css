@@ -414,7 +414,89 @@ footer p {
     }
 }
 
-@media screen and (min-width: 360px) and (max-width: 799px) {
+@media screen and (min-width: 500px) and (max-width: 799px) {
+    .particles-css .typing-demo h1 {
+        font-size: 70px;
+    }
+
+    .nav h1,
+    .slider h1 {
+        font-size: 35px;
+    }
+
+    h3 span {
+        font-size: 15px;
+    }
+    #tab-Bellman .container, #tab-Ford .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container p {
+        font-size: 10px;
+    }
+
+    .about-algorithm {
+        color: #faebd7;
+        width: 450px;
+        line-height: 2;
+        text-align: justify;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .about-img, .about-img2 {
+        display: flex;
+        justify-content: center; /* center horizontally */
+        align-items: center; /* center vertically */
+        margin-bottom: 30px;
+    }
+
+    .about-img img,
+    .about-img2 img {
+        width: 200px;
+        border-radius: .5rem;
+    }
+
+    .about-ford,
+    .about-bellman {
+    width: 450px;
+    padding-left: 40px;
+    padding-right: 40px;
+    }
+
+    .about-ford p, .about-bellman p {
+        line-height: 2;
+    }
+
+    .nav h2,
+    .slider h2 {
+        font-size: 15px;
+        letter-spacing: 0.2vw;
+    }
+
+    .nav-tab {
+        font-size: 10px;
+    }
+    .info {
+        width: 450px;
+    }
+
+    .info p {
+        text-align: justify;
+    }
+
+    .styleFoot2 {
+        font-size: 10px;
+    }
+    
+    .styleFoot {
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 499px) {
     .particles-css .typing-demo h1 {
         font-size: 50px;
     }
