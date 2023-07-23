@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "belmanfordrc",
+    "site": "bellmanford",
     "public": "./",
     "ignore": [
       "firebase.json",
