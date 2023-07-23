@@ -136,9 +136,7 @@ span:hover {
     bottom: 0;
     width: 100%;
     height: 60px;
-    /* box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5); */
     background: #231b29;
-    /* color fondo navBar */
     z-index: 10;
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
     user-select: none;
@@ -162,7 +160,7 @@ span:hover {
     flex: 1;
     color: #fff;
     /* color letra */
-    letter-spacing: 0.1rem;
+    /* letter-spacing: 0.1rem; */
     transition: all 0.5s ease;
     font-size: 15px;
 }
@@ -268,11 +266,17 @@ h1::selection {
 .about-algorithm {
     color: #faebd7;
     width: 810px;
-    line-height: 2;
     text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
 }
+
 .about-algorithm ul {
     margin-left: 50px;
+}
+
+.about-algorithm p strong {
+    color: #9c7bb4;
 }
 
 section .about {
@@ -281,23 +285,9 @@ section .about {
     align-items: center;
 }
 
-/* .about-img img {
-    width: 350px;
-    border-radius: .5rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    justify-self: center;
-    align-self: center;
-} */
-
-.about-img img {
-    max-width: 400px;
-    float: left;
-    border-radius: .5rem;
-}
-
+.about-img img,
 .about-img2 img {
-    max-width: 1000px;
+    max-width: 300px;
     float: left;
     border-radius: .5rem;
 }
@@ -308,16 +298,15 @@ section .about {
     /* margin-top: -2px;
     margin-right: 10rem; */
     padding-left: 40px;
+    padding-right: 40px;
     float: left;
 }
 
 .about-ford p,
 .about-bellman p {
-    margin: 15rem 0 10rem;
     font-size: 15px;
     text-align: justify;
     color: #faebd7;
-    line-height: 2;
 }
 
 #tab-Implementation {
@@ -325,22 +314,22 @@ section .about {
 }
 
 /* About project */
-.info{
+.info {
     color: #faebd7;
     line-height: 200px;
     width: 800px;
-    height: 200px;
     /* border: 3px solid green; */
     display: flex;
 
     margin: auto auto;
     padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .info p {
     line-height: 2;
     display: inline-block;
-    vertical-align: middle;
 }
 
 
@@ -353,7 +342,7 @@ p::selection {
 footer {
     background-color: #231b29;
     color: #fff;
-    padding: 25px;
+    padding: 10px;
     text-align: center;
     user-select: none;
     position: relative;
@@ -389,6 +378,122 @@ footer p {
 .linkGH:hover {
     color: #c79ce6;
 }
+
+@media (min-width: 800px) {
+
+    .nav h1,
+    .slider h1 {
+        font-size: 50px;
+    }
+    
+
+    .nav h2,
+    .slider h2 {
+        font-size: 3vw;
+    }
+
+    .nav-tab {
+        font-size: 15px;
+    }
+    .about-algorithm {
+        line-height: 2;
+    }
+
+    .about-img img,
+    .about-img2 img {
+        margin-left: 40px;
+    }
+
+    .about-ford p,
+    .about-bellman p {
+        line-height: 2;
+    }
+
+    .info p{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 799px) {
+    .particles-css .typing-demo h1 {
+        font-size: 50px;
+    }
+
+    .nav h1,
+    .slider h1 {
+        font-size: 20px;
+    }
+
+    h3 span {
+        font-size: 8px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container p {
+        font-size: 10px;
+    }
+
+    .about-algorithm {
+        color: #faebd7;
+        width: 300px;
+        text-align: justify;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .about-img, .about-img2 {
+        display: flex;
+        justify-content: center; /* center horizontally */
+        align-items: center; /* center vertically */
+        margin-bottom: 30px;
+    }
+
+    .about-img img,
+    .about-img2 img {
+        width: 200px;
+        border-radius: .5rem;
+    }
+
+    .about-ford,
+    .about-bellman {
+    width: 350px;
+    padding-left: 40px;
+    padding-right: 40px;
+    }
+
+    .about-ford p, .about-bellman p {
+        line-height: 2;
+    }
+
+    .nav h2,
+    .slider h2 {
+        font-size: 2vw;
+        letter-spacing: 0.2vw;
+    }
+
+    .nav-tab {
+        font-size: 9px;
+    }
+    .info {
+        width: 300px;
+    }
+
+    .info p {
+        text-align: justify;
+    }
+
+    .styleFoot2 {
+        font-size: 10px;
+    }
+    
+    .styleFoot {
+        font-size: 8px;
+    }
+}
+
 
 /* animation h3.span */
 .loader span {
@@ -528,320 +633,4 @@ footer p {
 .loader span:nth-child(24) {
     -webkit-animation-delay: 2.3s;
     animation-delay: 2.3s;
-}
-
-/* CSS para dispositivos pequeños */
-@media screen and (max-width: 375px) {
-
-    .particles-css .typing-demo h1 {
-        font-size: 30px;
-    }
-
-    .particles-css .particles-css2 h3 {
-        font-size: 13px;
-    }
-
-    .nav {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 50px;
-        /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
-        /* Modifica los valores según tus preferencias */
-        background: #231b29;
-        /* color fondo navBar */
-        z-index: 10;
-        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-        user-select: none;
-    }
-
-    .nav-top {
-        position: fixed;
-        top: 0;
-    }
-
-
-    .nav-bottom {
-        position: absolute;
-        bottom: 0;
-    }
-
-    .nav-tab {
-        text-decoration: none;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        color: #fff;
-        /* color letra */
-        letter-spacing: 0rem;
-        transition: all 0.5s ease;
-        font-size: 9.5px;
-    }
-
-    .slider h1 {
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 30px;
-        margin: 0;
-        letter-spacing: 0.2rem;
-        color: #734f8c;
-        /*Primary color por h1*/
-        transition: all 0.3s ease;
-        z-index: 3;
-    }
-
-    .about-img img {
-        width: 150px;
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* about R.B& LF */
-    .about-ford,
-    .about-bellman {
-        width: 265px;
-        margin-left: 30px;
-    }
-
-    .about-ford p,
-    .about-bellman p {
-        margin-top: 2rem;
-        font-size: 11px;
-        text-align: justify;
-        color: #faebd7;
-        line-height: 2;
-
-    }
-}
-
-
-/* CSS para dispositivos medianos */
-@media screen and (max-width: 568px) {
-    section {
-        width: 100%;
-        min-height: 100vh;
-    }
-
-    .particles-css .typing-demo h1 {
-        font-size: 60px;
-    }
-
-    .particles-css .particles-css2 h3 {
-        font-size: 16px;
-    }
-
-    .nav {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 50px;
-        background: #231b29;
-        /* color fondo navBar */
-        z-index: 10;
-        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-        user-select: none;
-    }
-
-    .nav-top {
-        position: fixed;
-        top: 0;
-    }
-
-
-    .nav-bottom {
-        position: absolute;
-        bottom: 0;
-    }
-
-    .nav-tab {
-        text-decoration: none;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        color: #fff;
-        /* color letra */
-        transition: all 0.5s ease;
-        font-size: 10px;
-    }
-
-    .slider h1 {
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 35px;
-        margin: 0;
-        letter-spacing: 0.2rem;
-        color: #734f8c;
-        /*Primary color por h1*/
-        transition: all 0.3s ease;
-        z-index: 3;
-    }
-
-    .about-img img {
-        width: 200px;
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-    }
-
-    /* about R.B& LF */
-    .about-ford,
-    .about-bellman {
-        width: 410px;
-        margin-left: 35px;
-    }
-
-    .about-ford p,
-    .about-bellman p {
-        margin-top: 2rem;
-        font-size: 12.5px;
-        text-align: justify;
-        color: #faebd7;
-        line-height: 2;
-
-    }
-
-    /* Footer */
-    footer {
-        background-color: #231b29;
-        color: #fff;
-        padding: 25px;
-        text-align: center;
-        user-select: none;
-        position: relative;
-    }
-
-    footer p {
-        text-decoration: none;
-    }
-
-    .styleFoot {
-        width: 100%;
-        font-size: 10px;
-        vertical-align: bottom;
-        margin: 2rem 0 2rem;
-        text-align: center;
-        color: #fff;
-    }
-
-    .styleFoot2 {
-        font-size: 12px;
-        width: 100%;
-        vertical-align: bottom;
-        margin: 2rem 0 2rem;
-        text-align: center;
-        color: #fff;
-    }
-
-
-}
-
-/* CSS para dispositivos grandes */
-@media screen and (max-width: 768px) {
-    section {
-        width: 100%;
-        min-height: 100vh;
-    }
-
-    .particles-css .typing-demo h1 {
-        font-size: 75px;
-    }
-
-    .particles-css .particles-css2 h3 {
-        font-size: 20px;
-    }
-
-    .nav {
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 55px;
-        background: #231b29;
-        /* color fondo navBar */
-        z-index: 10;
-        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-        user-select: none;
-    }
-
-    .nav-top {
-        position: fixed;
-        top: 0;
-    }
-
-
-    .nav-bottom {
-        position: absolute;
-        bottom: 0;
-    }
-
-    .nav-tab {
-        text-decoration: none;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        color: #fff;
-        /* color letra */
-        transition: all 0.5s ease;
-        font-size: 15px;
-    }
-
-    .slider h1 {
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 45px;
-        margin: 0;
-        letter-spacing: 0.2rem;
-        color: #734f8c;
-        /*Primary color por h1*/
-        transition: all 0.3s ease;
-        z-index: 3;
-    }
-
-    .about-img img {
-        width: 250px;
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-    }
-
-    /* about R.B& LF */
-    .about-ford,
-    .about-bellman {
-        width: 600px;
-        margin-left: 35px;
-    }
-
-    .about-ford p,
-    .about-bellman p {
-        margin-top: 2rem;
-        font-size: 15px;
-        text-align: justify;
-        color: #faebd7;
-        line-height: 2;
-
-    }
-
 }

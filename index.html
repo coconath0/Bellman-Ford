@@ -41,9 +41,9 @@
         <!-- Barra de navegacion -->
         <div class="nav nav-bottom">
             <a class="nav-tab" href="#tab-Algorithm">Algorithm</a>
-            <a class="nav-tab" href="#tab-Bellman">Richard Bellman</a>
-            <a class="nav-tab" href="#tab-Ford">Lester Ford</a>
-            <a class="nav-tab" href="#tab-project">About project</a>
+            <a class="nav-tab" href="#tab-Bellman">Bellman</a>
+            <a class="nav-tab" href="#tab-Ford">Ford</a>
+            <a class="nav-tab" href="#tab-project">Project</a>
             <a class="nav-tab" href="#tab-Implementation">Implementation</a>
             <div id="marker"></div>
             <!-- <span class="nav-tab-slider"></span> -->
@@ -66,13 +66,13 @@
                         of 0. Then, iterates through the next two V1 steps, where V is the total number of nodes in the graph
                     </p><br>
                     <ul>
-                        <li>Edge relaxation phase: For each edge (u, v) in the graph, try to increase the distance to node v from
+                        <li><p><strong>Edge relaxation phase:</strong> For each edge (u, v) in the graph, try to increase the distance to node v from
                             node u by adding the weight of the edge to the current distance of u and comparing the result with the
-                            current distance of v. The distance of v is updated if it is shorter.</li><br>
+                            current distance of v. The distance of v is updated if it is shorter.</p></li>
                 
-                        <li>Negative Cycle Detection Phase: After the V-1 edge relaxation phases, an additional phase is performed
+                        <li><p><strong>Negative Cycle Detection Phase:</strong> After the V-1 edge relaxation phases, an additional phase is performed
                             to determine if there is a negative cycle in the graph. If an improvement is found in any of the
-                            distances, a negative cycle can be reached from the source.</li>
+                            distances, a negative cycle can be reached from the source.</p></li>
                     </ul><br>
                     <p>
                         The algorithm will calculate the shortest distance between the source and all other nodes when the V-1 edge
