@@ -1,8 +1,34 @@
 var main = document.querySelector('.main');
 var nav = document.querySelector('.nav');
+var navToggle = document.querySelector('#nav-toggle');
 
 
-var offset = main.offsetHeight - nav.offsetHeight;
+var offset = 0;
+
+function updateOffset() {
+    offset = main.offsetHeight - nav.offsetHeight;
+}
+
+function closeMobileNav() {
+    nav.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+}
+
+function toggleMobileNav() {
+    var isOpen = nav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+}
+
+if (navToggle) {
+    navToggle.addEventListener('click', toggleMobileNav);
+}
+
+window.addEventListener('resize', function () {
+    updateOffset();
+    if (window.innerWidth > 768) {
+        closeMobileNav();
+    }
+});
 
 window.onscroll = function () {
     if (window.pageYOffset > offset) {
@@ -13,6 +39,8 @@ window.onscroll = function () {
         nav.classList.remove('nav-top');
     }
 }
+
+updateOffset();
 
 var marker = document.querySelector('#marker');
 var item = document.querySelectorAll('.nav .nav-tab');
@@ -43,7 +71,7 @@ function updateMarker() {
     });
 
     if (!activeSection) {
-        indicator(null); // Clear marker position if not in any section
+        marker.style.width = '0';
     }
 }
 
@@ -55,6 +83,7 @@ item.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
         var target = document.querySelector(link.getAttribute('href'));
+        closeMobileNav();
         window.scrollTo({
             top: target.offsetTop - nav.offsetHeight + 1,
             behavior: 'smooth'
