@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap);
 
 :root {
-    --bg: #E9E2DF;
+    --bg: #E1CF96;
     --bg-elevated: rgba(233, 226, 223, 0.9);
     --bg-soft: rgba(225, 207, 150, 0.22);
     --surface: rgba(255, 255, 255, 0.58);
@@ -32,10 +32,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background:
-        radial-gradient(circle at top left, rgba(225, 207, 150, 0.24), transparent 36%),
-        radial-gradient(circle at bottom right, rgba(148, 165, 112, 0.2), transparent 30%),
-        var(--bg);
+    background: var(--bg);
     color: var(--text);
 }
 
@@ -95,8 +92,8 @@ section {
     gap: 1rem;
     padding: clamp(1.5rem, 4vh, 2.5rem) 1rem;
     background:
-        linear-gradient(180deg, rgba(233, 226, 223, 0.82), rgba(233, 226, 223, 0.94)),
-        #E9E2DF;
+        linear-gradient(180deg, rgba(148, 165, 112, 0.9), rgba(148, 165, 112, 0.96)),
+        #94A570;
     isolation: isolate;
 }
 
@@ -326,7 +323,7 @@ span:hover {
     text-align: center;
     padding: clamp(4.5rem, 8vw, 6.5rem) 1rem 3rem;
     background:
-        linear-gradient(180deg, rgba(233, 226, 223, 0.94), rgba(233, 226, 223, 0.98)),
+        linear-gradient(180deg, rgba(225, 207, 150, 0.9), rgba(225, 207, 150, 0.96)),
         var(--bg);
     
 }
@@ -498,13 +495,12 @@ p::selection {
 /* Footer */
 footer {
     background:
-        linear-gradient(180deg, rgba(148, 165, 112, 0.9), rgba(88, 99, 44, 0.96));
+        linear-gradient(180deg, rgba(225, 207, 150, 0.9), rgba(88, 99, 44, 0.5));
     color: #f7f4f1;
     padding: 1.25rem 1rem 1.75rem;
     text-align: center;
     user-select: none;
     position: relative;
-    border-top: 1px solid rgba(225, 207, 150, 0.35);
 }
 
 footer p {
