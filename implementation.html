@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellman-Ford Interactive</title>
+    <link rel="icon" href="./img/icon.ico">
+    <link rel="stylesheet" href="./css/implementation.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <a href="./index.html" class="back-link">Back To Home</a>
+        <h1>BELLMAN-FORD INTERACTIVE</h1>
+        <p>Build your own graph, run the algorithm, and inspect shortest paths.</p>
+    </header>
+
+    <main class="app-grid">
+        <section class="panel controls-panel">
+            <h2>Graph Controls</h2>
+
+            <div class="controls-row">
+                <label for="vertex-count">Nodes (V)</label>
+                <input id="vertex-count" type="number" min="2" max="30" value="5">
+            </div>
+
+            <div class="controls-row split">
+                <div>
+                    <label for="source-node">Source</label>
+                    <select id="source-node"></select>
+                </div>
+                <div>
+                    <label for="target-node">Target</label>
+                    <select id="target-node"></select>
+                </div>
+            </div>
+
+            <div class="button-row">
+                <button id="sample-btn" type="button">Load Sample</button>
+                <button id="add-edge-btn" type="button">Add Edge</button>
+                <button id="clear-edges-btn" type="button">Clear Edges</button>
+                <button id="run-btn" type="button" class="primary">Run Bellman-Ford</button>
+            </div>
+
+            <h3>Edges (u, v, weight)</h3>
+            <p class="hint">Directed edges. Negative weights are allowed.</p>
+            <div id="edge-rows" class="edge-rows"></div>
+        </section>
+
+        <section class="panel graph-panel">
+            <h2>Graph View</h2>
+            <canvas id="graph-canvas" width="900" height="560"></canvas>
+            <p class="hint">Gold edges represent the selected shortest path. Green edges represent predecessor updates.</p>
+        </section>
+
+        <section class="panel results-panel">
+            <h2>Results</h2>
+            <div id="summary" class="summary">Press <strong>Run Bellman-Ford</strong> to calculate shortest distances.</div>
+
+            <div class="educational-panel">
+                <label class="mode-toggle" for="educational-mode">
+                    <input id="educational-mode" type="checkbox">
+                    Educational Mode (step-by-step passes)
+                </label>
+
+                <div id="pass-controls" class="pass-controls" aria-live="polite">
+                    <button id="pass-prev" type="button">Previous Pass</button>
+                    <select id="pass-select"></select>
+                    <button id="pass-next" type="button">Next Pass</button>
+                </div>
+
+                <p id="pass-summary" class="hint pass-summary">Run the algorithm to inspect pass-by-pass updates.</p>
+                <div id="educational-explanation" class="educational-explanation"></div>
+            </div>
+
+            <h3>Distances</h3>
+            <div id="distance-table"></div>
+
+            <h3>Relaxation Log</h3>
+            <div id="log-table" class="log-table"></div>
+        </section>
+    </main>
+
+    <script src="./js/implementation.js"></script>
+</body>
+
+</html>
