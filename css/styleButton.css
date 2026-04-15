@@ -1,8 +1,10 @@
 .center {
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto 0;
 }
 
 @-webkit-keyframes glow {
@@ -33,18 +35,25 @@
     outline: none;
     cursor: pointer;
     border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-glow {
-    background: #51296e;
+    background: linear-gradient(135deg, #734f8c, #51296e);
     color: #fff;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 12px 20px;
-    box-shadow: 0 0 0 0 #51296e;
-    -webkit-animation: glow 1.4s linear infinite;
-    animation: glow 1.4s linear infinite;
+    letter-spacing: 0.08em;
+    padding: 12px 22px;
+    box-shadow: 0 0 0 0 rgba(81, 41, 110, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    -webkit-animation: glow 1.8s linear infinite;
+    animation: glow 1.8s linear infinite;
+}
+
+.btn-glow:hover {
+    transform: translateY(-2px);
 }
 
 @media  (min-width: 800px) {
@@ -59,14 +68,7 @@
     .btn-glow {
         margin-top: 40px;
         margin-bottom: 40px;
-        background: #51296e;
-        color: #fff;
         font-size: 10px;
-        font-weight: 600;
-        text-transform: uppercase;
         padding: 12px 15px;
-        box-shadow: 0 0 0 0 #51296e;
-        -webkit-animation: glow 1.4s linear infinite;
-        animation: glow 1.4s linear infinite;
     }
 }
