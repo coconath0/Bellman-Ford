@@ -111,7 +111,7 @@ section {
 
 .particles-css .typing-demo h1 {
     display: inline-block;
-    width: 14ch;
+    width: 14.5ch;
     max-width: 100%;
     animation: typing 2.2s steps(22), blink .7s step-end infinite alternate;
     white-space: nowrap;
@@ -203,7 +203,7 @@ span:hover {
     padding: 0.35rem;
     background: rgba(255, 255, 255, 0.74);
     border: 1px solid var(--border);
-    border-radius: 999px;
+    border-radius: 20px;
     backdrop-filter: blur(18px);
     box-shadow: 0 14px 38px rgba(88, 99, 44, 0.14);
     z-index: 10;
@@ -293,24 +293,6 @@ span:hover {
     transform: translateY(-1px);
 }
 
-.nav #marker {
-    position: absolute;
-    height: 3px;
-    bottom: 5px;
-    background: linear-gradient(90deg, #DDAD28, #94A570);
-    transition: 0.35s ease;
-    border-radius: 999px;
-}
-
-.nav-bottom #marker {
-    left: 0;
-    width: 0;
-}
-
-.nav-top #marker {
-    left: 0;
-    width: 100%;
-}
 
 /* main */
 .slider {
@@ -319,7 +301,7 @@ span:hover {
     justify-content: center;
     align-items: center;
     position: relative;
-    min-height: 100svh;
+    height: 100vh;
     text-align: center;
     padding: clamp(4.5rem, 8vw, 6.5rem) 1rem 3rem;
     background:
@@ -495,8 +477,7 @@ p::selection {
 /* Footer */
 footer {
     background:
-        linear-gradient(180deg, rgba(225, 207, 150, 0.9), rgba(88, 99, 44, 0.35));
-    color: #f7f4f1;
+        var(--accent);
     padding: 1.25rem 1rem 1.75rem;
     text-align: center;
     user-select: none;
